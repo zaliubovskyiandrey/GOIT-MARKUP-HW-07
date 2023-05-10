@@ -36,27 +36,22 @@
         position: absolute;
         top: 24px;
         right: 24px;
-        
-        
-
-
+             
         display: block;
         margin-top: auto;
         width: 24px;
         height: 24px;
-        background-color:var(--Accent);
+        background-color:var(--White-background);
         border-radius: 50%;
         border:none;
         cursor: pointer;
-        color:var(--Dark);
-        
+        color:var(--Dark);     
        }
 
     /* Tables styles &>*/
     @media only screen and (min-width: 768px){ 
     .container {
     max-width:768px;}
-
 
 
             }
@@ -216,6 +211,21 @@ img{
 }
 
 .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--Dark);    
+    display: inline-block;
+    
+}
+@media only screen and(min-width:768px;){
+    
+}
+
+@media only screen and(min-width:1158px;){
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -1134,10 +1144,12 @@ margin-bottom: 16px;
             position: fixed;
             top: 0;
             left: 0;
+            display: flex;
+            flex-direction: column;
             width: 100vw;
             height: 100vh;
             padding: 32px;
-            background-color: #3f51b5;
+            background-color: var(--White-background);
             z-index: 999;
           
             transform: translateX(100%);
@@ -1156,15 +1168,65 @@ margin-bottom: 16px;
           }
           
           .mobile-menu {
+            display:flex;
+            flex-direction: column;
             padding: 0;
-            margin: 0;
+            margin-bottom: auto;
+            gap:40px;
             list-style: none;
+            color: var(--Dark);
+            flex: none;
+            
           }
+          .mobile-link{
+            color: var(--Dark);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            text-decoration: none;
+            
+          }
+          .mobile-link:hover{
+            color: var(--Primary-Brand);}
+
           
           .mobile-menu .link {
             display: block;
             padding: 10px;
             color: #fff;
             text-decoration: none;
+          }
+          .mobile-contacts{
+            display:flex;
+            flex-direction: column;
+            margin-bottom: 48px;
+
+          }
+          .mobile-socials{
+            display: flex;
+            gap: 30px;
+                       }
+
+          .mobile-tel{
+            font-size: 36px;
+            line-height: 40px;            
+            letter-spacing: 0.02em;
+            text-transform: capitalize;    
+            color: var(--Primary-Brand);
+            margin-bottom: 40px;
+            
+
+          }
+          .mobile-email{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #434455;
+            padding: 0px 35px 40px 40px;
+
           }
            
