@@ -35,8 +35,7 @@
     .btn-close {
         position: absolute;
         top: 24px;
-        right: 24px;
-             
+        right: 24px;             
         display: block;
         margin-top: auto;
         width: 24px;
@@ -51,17 +50,19 @@
     /* Tables styles &>*/
     @media only screen and (min-width: 768px){ 
     .container {
-    max-width:768px;}
+    max-width:768px;
+    margin:24px 120px 16px 16px;    
+    outline-offset:-2 px;
+    padding-left: 15px;
+    padding-right: 15px;}}
 
 
-            }
+           
     /* Desdktop styles &> */
     @media only screen  and (min-width: 1158px){ 
         .container {
         max-width: 1158px;
-        margin-left: auto;
-        margin-right: auto;
-        outline: 2px solid red;
+        margin:24px 0px 24px 156px;        
         outline-offset:-2 px;
         padding-left: 15px;
         padding-right: 15px;}
@@ -110,8 +111,7 @@ img{
     position: fixed;
     top: 0;
     z-index: var(--header-idx);
-    width: 100%;
-    padding: 
+    width: 100%;     
     border-bottom: 1px solid #e7e9fc;
     gap: 40px;
     display: flex;
@@ -158,12 +158,13 @@ img{
     align-items: center;
     
 }
-.list-nav{
-    display: none;
+@media only screen and (max-width:767px){
+    .list-nav{
+    display: none;}}
     /* display: flex;
     gap: 40px; */
-}
-@media only screen and (min-width:768px;){
+
+@media only screen and (min-width:768px){
     .list-nav{
      display: flex;
      gap: 40px;
@@ -171,15 +172,14 @@ img{
         }
         }
     
-    @media only screen and (min-width:1158px;){
+@media only screen and (min-width:1158px){
     .list-nav{
     display: flex;
     gap: 40px;
     }
     }
-    media screen {
     
-}
+
 .contact{
     display: flex;
      
@@ -190,7 +190,19 @@ img{
        gap: 40px; */
 }
 /* reset end */
-
+@media only screen and (min-width:768px){
+    .list-contact {
+        display: flex;
+    gap: 40px;
+       
+    }
+}
+@media only screen and (min-width:1158px){
+    .list-nav{
+    display: flex;
+    gap: 40px;
+    }
+    }
 
 .contact {
     font-style: normal;
@@ -221,11 +233,11 @@ img{
     display: inline-block;
     
 }
-@media only screen and(min-width:768px;){
+@media only screen and (min-width:768px){
     
 }
 
-@media only screen and(min-width:1158px;){
+@media only screen and (min-width:1158px) {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -236,6 +248,7 @@ img{
     display: inline-block;
     margin-right: 76px;
 }
+
 
 .logo-web {
     color: var(--Primary-Brand);
@@ -1227,6 +1240,18 @@ margin-bottom: 16px;
             letter-spacing: 0.02em;
             color: #434455;
             padding: 0px 35px 40px 0px;
-
           }
-           
+          .modal-btn-close-mobile {
+            position: absolute;                        
+            width: 24px;
+            height: 24px;            
+            width: 24px;
+            height: 24px;             
+            border-radius: 50%;            
+            cursor: pointer;
+            color:var(--Dark);
+            /* border: 1px solid #2E2F42; */
+            
+           }
+ 
+            
