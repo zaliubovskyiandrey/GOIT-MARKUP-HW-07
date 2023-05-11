@@ -24,9 +24,8 @@
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  
+    padding-left: 16px; 
+   
     }
     .burger-button{
         stroke:var(--Dark);
@@ -50,8 +49,7 @@
     /* Tables styles &>*/
     @media only screen and (min-width: 768px){ 
     .container {
-    max-width:768px;
-    margin:24px 120px 16px 16px;    
+    max-width:768px;        
     outline-offset:-2 px;
     padding-left: 15px;
     padding-right: 15px;}}
@@ -61,8 +59,7 @@
     /* Desdktop styles &> */
     @media only screen  and (min-width: 1158px){ 
         .container {
-        max-width: 1158px;
-        margin:24px 0px 24px 156px;        
+        max-width: 1158px;                
         outline-offset:-2 px;
         padding-left: 15px;
         padding-right: 15px;}
@@ -168,6 +165,7 @@ img{
     .list-nav{
      display: flex;
      gap: 40px;
+     margin-left: 120px;
             
         }
         }
@@ -186,14 +184,15 @@ img{
 }
 .list-contact{
     display: none;
-    /* display: flex;
-       gap: 40px; */
+     
 }
 /* reset end */
 @media only screen and (min-width:768px){
     .list-contact {
         display: flex;
-    gap: 40px;
+        flex-direction: column;
+        padding-left: 121px;16px;
+    
        
     }
 }
@@ -326,6 +325,13 @@ color: var(--Pressed-state);
     color: var(--text-color);
     
 }
+@media only screen and (min-width:768px){
+    .address-link {
+        
+        
+    }}
+
+
 
 /* Hero section */
 .main-title {
@@ -824,7 +830,7 @@ margin-bottom: 16px;
         display: flex;
        }
     .button-subscribe{     
-        display: flex;        
+     display: flex;        
      justify-content: center;
      align-items: center;          
      gap: 16px;
