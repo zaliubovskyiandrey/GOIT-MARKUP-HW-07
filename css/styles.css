@@ -59,7 +59,7 @@
 
 
            
-    /* Desdktop styles &> */
+    /* Desktop styles &> */
     @media only screen  and (min-width: 1158px){ 
         .container {
         max-width: 1158px;                
@@ -121,11 +121,14 @@ img{
     width: 100%;     
     border-bottom: 1px solid #e7e9fc;
     gap: 40px;
-    display: flex;
+    display: block;
     align-items: center;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
+
+    
+
 @media only screen and (min-width:768px;){
 .header{
         
@@ -158,9 +161,7 @@ img{
     margin: 0;
     display: flex;    
     flex-wrap: wrap;
-    gap: ;
-     
-    
+        
 }
 .header-container {
     display:flex;
@@ -500,7 +501,27 @@ display: flex;
 } */
 
 /* Tablet styles Section 1*/
-/* @media only screen and (min-width:767px) */
+@media only screen and (min-width:767px) and (max-width:1157px){
+    .adventeges-item{
+        display: none;}
+        .adventages-list-container{
+           
+            display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        }   
+        .advantages{
+        flex-basis: calc((100% - 3 * 24px) / 2);
+        
+
+        }
+
+
+
+}
+
 
 
 /* Desktop style Section 1 */
