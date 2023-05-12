@@ -143,8 +143,34 @@ img{
     
 
 .link {
+    
+    max-width: 264px;
+    align-items: center;
     text-decoration: none;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+     gap: 72px;
+  
+}
+
+.link.list{
+    padding-left: 0;
+
+}
+@media only screen and (min-width: 768px){
+.link.list{
+    row-gap: 64px;
+    column-gap: 24px;
+    justify-content: center;
+    flex-direction: row;   
+}
+.link{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+
+}
 }
 
 .link:hover {
@@ -157,12 +183,28 @@ img{
 
 .list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: auto;
+    margin: auto;
     display: flex;    
     flex-wrap: wrap;
         
 }
+@media only screen and (min-width: 768px){ 
+    .list {        
+        list-style: none;        
+        display: flex;    
+        flex-wrap: wrap;
+        
+    }}
+
+@media only screen and (min-width: 1158px){ 
+        .list {        
+            list-style: none;        
+            display: flex;    
+            margin: auto;
+            
+        }}
+
 .header-container {
     display:flex;
     align-items: center;
@@ -206,7 +248,7 @@ img{
     .list-contact {
         display: flex;
         flex-direction: column;
-        padding: 16px; 16px; 16px; 121px; 
+        padding: 16px; 16px 16px; 121px; 
     
        
     }
@@ -442,8 +484,7 @@ display: flex;
     background-color: #f4f4fd;   
     
 }
-.adventages-list-container{
-    width: 320px;
+.adventages-list-container{    
     display: flex;
     flex-direction: column;
     row-gap: 72px;
@@ -584,9 +625,21 @@ display: flex;
     display: inline-block;}
 
 /* Section 2 */
+/* Mobile Sectiion 2 */
+/* @media only screen and (max-width:428px){
+    
+
+
+/* Tablet section 2 */
+@media only screen and (max-width:768px){
+    .activity-container{
+        display: none;
+    }}
+/* Desktop section 2 */
+@media only screen and (min-width:1158px){
 .activity-container{
     padding-bottom: 120px;
-}
+}}
 .activity-title {
     font-size: 36px;
     line-height: 1.11;
@@ -605,6 +658,8 @@ display: flex;
 .main-team {
     background: var(--Light);
     padding: 120px 0;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -824,6 +879,7 @@ display: flex;
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding-left: 0;
 } 
 .socials-item{
 width: 40px; 
