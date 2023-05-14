@@ -510,10 +510,7 @@ display: flex;
     margin: 0;
     padding: 0;
 }
-.advantages{
-    
-
-}}
+}
 .advantages-container{
     
     padding: 96px 0px;
@@ -892,13 +889,57 @@ display: flex;
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid rgb(19, 17, 17);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-    url("../images/overlay/img-name.jpg");
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
 }
+
+@media only screen and (max-width:428px){
+    .overlay{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/overlay/tab@1x.jpg");
+    }
+    @media (min-device-pixel-ratio:2), (min-resolution:192dpi ), (min-resolution: 2dppx){
+    .overlay{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/overlay/tab@2x.jpg");
+       } 
+    }
+}
+@media only screen and (min-width:429px) and (max-width:768px)  {
+    .overlay{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/overlay/tab@1x.jpg");
+    }
+    @media (min-device-pixel-ratio:2), (min-resolution:192dpi ), (min-resolution: 2dppx){
+    .overlay{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/overlay/tab@2x.jpg");
+       } 
+    }
+}
+@media only screen and (min-width:769px)     {
+    .overlay{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/overlay/desk@1x.jpg");
+    }
+    @media (min-device-pixel-ratio:2), (min-resolution:192dpi ), (min-resolution: 2dppx){
+    .overlay{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/overlay/desk@2x.jpg");
+       } 
+    }
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width:767px){
     .overlay{
         max-width: 428px;
@@ -1396,14 +1437,7 @@ margin-bottom: 16px;
             outline-color: var(--Primary-Brand);
             box-shadow: 0 0 0 4px rgba(76, 89, 230, 0.25%);    
         }
-                
         
-        .modal-form-agreement {
-           
-
-               
-            
-        }
         .agrement-box{
             display:flex;
            align-items: center;
@@ -1625,10 +1659,8 @@ margin-bottom: 16px;
                        }
             @media only screen and (max-width:418px) {
             .mobile-socials.list.link{
-            gap: 26px;   
-
+            gap: 26px; 
             }
-
             }          
 
           .mobile-tel{
@@ -1662,13 +1694,13 @@ margin-bottom: 16px;
           .modal-btn-close-mobile {
             position: absolute;                        
             width: 24px;
-            height: 24px;            
-            width: 24px;
-            height: 24px;             
+            height: 24px; 
+            background-color: var(--Accent);
+                       
             border-radius: 50%;            
             cursor: pointer;
             color:var(--Dark);
-            /* border: 1px solid #2E2F42; */
+            border: none;
             
            }
            /* Section 4 */
