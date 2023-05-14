@@ -899,12 +899,12 @@ display: flex;
 @media only screen and (max-width:428px){
     .overlay{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-    url("../images/overlay/tab@1x.jpg");
+    url("../images/overlay/mob@1x.jpg");
     }
     @media (min-device-pixel-ratio:2), (min-resolution:192dpi ), (min-resolution: 2dppx){
     .overlay{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-    url("../images/overlay/tab@2x.jpg");
+    url("../images/overlay/mob@2x.jpg");
        } 
     }
 }
@@ -935,22 +935,15 @@ display: flex;
 
 
 
-
-
-
-
-
-@media only screen and (max-width:767px){
+/* @media only screen and (max-width:767px){
     .overlay{
         max-width: 428px;
         margin-left: auto;
         margin-right: auto;
-        outline: 1px solid rgb(19, 17, 17);
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-        url("../images/overlay/img-name.jpg");
-        background-repeat: no-repeat;
+        outline: 1px solid rgb(19, 17, 17);}}         */
+        /* background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;}}
+        background-size: cover; */
 
 /* Socials icons */
 .socials{
