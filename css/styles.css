@@ -96,6 +96,11 @@
         align-items: center;
     }
     }
+    @media only screen and (min-width:1158px){
+        .header-nav{
+            display: flex;
+            margin-right: 76px;
+            align-items: center;   }}    
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -164,8 +169,7 @@ img{
 
 .list {
     list-style: none;
-    padding: auto;
-    margin: auto;
+    padding: auto;    
     display: flex;    
     flex-wrap: wrap;
         
@@ -182,7 +186,7 @@ img{
         .list {        
             list-style: none;        
             display: flex;    
-            margin: auto;
+           
             
         }}
 
@@ -242,7 +246,7 @@ img{
     .list-contact {
         display: flex;        
         flex-direction: row;
-        margin-right: 156px;
+        margin-left: auto;
         padding: 24px 0px 24px 0px;
         gap: 40px;          
     }
@@ -290,10 +294,16 @@ img{
         
     }
 }
-.logo-web {
+.link.logo-web.logo {
     color: var(--Primary-Brand);
-    
+       
     }
+    @media only screen and (min-width:1158px){
+        .link.logo-web.logo{
+            margin-right: 76px;
+
+        }  } 
+    
 
 
 .logo-studio {
