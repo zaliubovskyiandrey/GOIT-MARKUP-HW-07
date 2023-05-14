@@ -52,7 +52,10 @@
     max-width:768px;        
     outline-offset:-2 px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;}
+
+    .container.header-container {
+        height: 72px;
     }}
 
            
@@ -205,9 +208,9 @@ img{
 .header-container {
     height: 70px;
 }
-.link.list{
-    
-    margin-right: auto;;
+.link.list{    
+    margin-right: auto;
+    margin-left: auto;
 }
 }
     
@@ -217,7 +220,8 @@ img{
      display: flex;
      flex-wrap: nowrap;
      gap: 40px;
-     padding-left: 0;       
+     padding-left: 0;
+     margin: 0;       
             
         }
         }
@@ -255,7 +259,7 @@ img{
         display: flex;        
         flex-direction: row;
         margin-left: auto;
-        padding: 24px 0px 24px 0px;
+        /* padding: 24px 0px 24px 0px; */
         gap: 40px;          
     }
     }
@@ -301,11 +305,16 @@ img{
         display: inline-block;
         
     }
-}
+    .link.logo-web.logo {
+        margin-right:120px ;
+}}
 .link.logo-web.logo {
     color: var(--Primary-Brand);
        
     }
+     
+
+        
     @media only screen and (min-width:1158px){
         .link.logo-web.logo{
             margin-right: 76px;
@@ -392,6 +401,10 @@ color: var(--Pressed-state);
 
 
 /* Hero section */
+ 
+
+
+
 .main-title {
     background-color: var(--Dark);   
     display: flex;
@@ -410,9 +423,7 @@ color: var(--Pressed-state);
 
 /* mobile style */
 .main-text {
-    font-size: 36px;
-    Line-height: 40px;
-    Line-height: 95%;   
+    font-size: 36px;      
     letter-spacing: 0.02em;
     color: var(--White-background);        
    
@@ -442,6 +453,7 @@ color: var(--Pressed-state);
     }
     .main-text {
         margin-bottom: 72px;
+        min-width: 320px;
     
 
 }}
@@ -1016,7 +1028,9 @@ height: 40px;
     display: flex;    
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: flex-start;
+    gap: 72px 24px;
+    padding-left: 0; 
   
     
 
@@ -1026,14 +1040,20 @@ height: 40px;
 @media only screen and (min-width:1158px){
     .container-footer{ 
         display: flex;
+        flex-direction: row;
         /* align-items: baseline; */
         width:1158px;          
         outline-offset:-2 px;
         padding-left: 15px;
         padding-right: 15px;
-        justify-content:center;    
+        justify-content:center; 
+        text-align: start;   
     }
-}
+    .webstudio-footer{
+        margin-right: 120px;}
+        .Social-media{
+        margin-right: 80px;
+}}
 
 
 @media only screen and (max-width:768px) {
@@ -1051,9 +1071,13 @@ height: 40px;
     margin: 0;    
     justify-content: center;        
 }
-    .webstudio-footer.Social-media {
-        
+.social-title-footer{
+        text-align: start;
 }
+.subscribe-social-footer{
+    text-align: start;
+}
+
 }
 .social-title-footer{
 font-weight: 500;
@@ -1389,8 +1413,7 @@ margin-bottom: 16px;
         }
         
         .modal-form-agrement-box {
-            appearance: none;
-                  
+            appearance: none;                  
             width: 16px;
             height: 16px;
             left: 20px;
@@ -1401,6 +1424,7 @@ margin-bottom: 16px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 0;
+            flex-shrink: 0;
 
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -1593,12 +1617,19 @@ margin-bottom: 16px;
 
           }
           .mobile-socials.list.link{
-            display: flex;
-           
+            display: flex;                       
             gap: 56px;
             padding: 0;            
             max-width: 100%;
+            margin-left: 0;
                        }
+            @media only screen and (max-width:418px) {
+            .mobile-socials.list.link{
+            gap: 26px;   
+
+            }
+
+            }          
 
           .mobile-tel{
             font-size: 36px;
@@ -1608,8 +1639,13 @@ margin-bottom: 16px;
             text-transform: capitalize;    
             color: var(--Primary-Brand);
             margin-bottom: 40px;
-            
-          }
+                      }
+            @media only screen and (max-width:418px) {
+                .mobile-tel{
+            font-size: 25px;   
+
+                }}
+
           .mobile-menu-tel{
             margin-top: 0;
           }
