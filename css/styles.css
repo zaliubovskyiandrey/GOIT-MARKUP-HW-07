@@ -161,6 +161,14 @@ img{
 
 }
 }
+@media only screen and (min-width: 11587px){
+    .link.list{
+        row-gap: 64px;
+        column-gap: 24px;
+        justify-content: center;      
+        flex-wrap: wrap;
+    }}
+
 
 .link:hover {
     color: var(--Pressed-state);
@@ -175,6 +183,7 @@ img{
     padding: auto;    
     display: flex;    
     flex-wrap: wrap;
+    margin:0;
         
 }
 @media only screen and (min-width: 768px){ 
@@ -308,9 +317,9 @@ img{
     .link.logo-web.logo {
         margin-right:120px ;
 }}
-.link.logo-web.logo {
-    color: var(--Primary-Brand);
-       
+
+    .link.logo-web.logo-footer.link-footer{
+        color: var(--Primary-Brand);
     }
      
 
@@ -1698,8 +1707,8 @@ margin-bottom: 16px;
            }
            /* Section 4 */
            .logo-company{
-            row-gap: 72px;
             gap: 24px;
+            row-gap: 72px;
             padding-left: 0;
             justify-content: center;
 
