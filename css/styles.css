@@ -407,7 +407,14 @@ color: var(--Pressed-state);
 @media only screen and (min-width:768px){
     .address-link {
     gap:12px;       
-    }}
+    }
+    .link.address-link {
+        font-style: Regular;
+        font-size: 12px;
+        line-height: 14px;}     
+
+}
+
 
 
 
@@ -464,7 +471,7 @@ color: var(--Pressed-state);
     }
     .main-text {
         margin-bottom: 72px;
-        min-width: 320px;
+        max-width: 320px;
     
 
 }}
@@ -754,7 +761,7 @@ display: flex;
     color: var(--Light);
     max-width: 264px;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     .small-text {
         text-align: left;
 
@@ -913,7 +920,7 @@ display: flex;
 
 }
 
-@media only screen and (max-width:428px){
+@media only screen and (max-width:427px){
     .overlay{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url("../images/overlay/mob@1x.jpg");
@@ -925,7 +932,7 @@ display: flex;
        } 
     }
 }
-@media only screen and (min-width:429px) and (max-width:768px)  {
+@media only screen and (min-width:428px) and (max-width:767px)  {
     .overlay{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url("../images/overlay/tab@1x.jpg");
@@ -937,7 +944,7 @@ display: flex;
        } 
     }
 }
-@media only screen and (min-width:769px)     {
+@media only screen and (min-width:768px)     {
     .overlay{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url("../images/overlay/desk@1x.jpg");
@@ -1096,11 +1103,11 @@ height: 40px;
 }}
 
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
 .webstudio-footer{   
     margin-right: auto;   
     margin-left: auto;
-    padding-bottom: 72px;
+    margin-bottom: 16px;
 }}
 @media only screen and (min-width:768px) and (max-width:1157px) {
     .webstudio-footer{
